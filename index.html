@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Canvas</title>
+</head>
+<body>
+
+    
+    <h1>Jogo Da Foca da Programa</h1>
+
+    <div id="jogo">
+        <div class="area" id="area-esquerda">
+            <canvas id="canvas" width="600" height="450" style="border:2px solid #000000;"></canvas>
+        </div>
+            
+        <div class="area" id="area-direita">
+    
+            <div id="palavra"></div><br>
+    
+            <div id="botoes">
+                <div id="fileira 1">
+                    <button id="btnQ">Q</button>
+                    <button id="btnW">W</button>
+                    <button id="btnE">E</button>
+                    <button id="btnR">R</button>
+                    <button id="btnT">T</button>
+                    <button id="btnY">Y</button>
+                    <button id="btnU">U</button>
+                    <button id="btnI">I</button>
+                    <button id="btnO">O</button>
+                    <button>P</button>
+                </div>
+    
+                <div id="fileira 2">
+                    <button>A</button>
+                    <button>S</button>
+                    <button>D</button>
+                    <button>F</button>
+                    <button>G</button>
+                    <button>H</button>
+                    <button>J</button>
+                    <button>K</button>
+                    <button>L</button>
+                </div>
+    
+                <div id="fileira 3">
+                    <button>Z</button>
+                    <button>X</button>
+                    <button>C</button>
+                    <button>V</button>
+                    <button>B</button>
+                    <button>N</button>
+                    <button>M</button>
+                </div>
+            </div><br>
+                
+            <h2>Tentativas Erradas</h2>
+            <div id="letras-erradas"></div>
+    
+        </div>
+    </div>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #h1{ 
+            
+        }
+
+        #jogo {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Divide a área em duas colunas iguais */
+            gap: 20px; /* Define um espaçamento entre as colunas */
+            align-items: center; /* Centraliza verticalmente o conteúdo das colunas */
+        }
+
+        .area{
+
+            align-items: center;
+        }
+
+
+
+    </style>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
