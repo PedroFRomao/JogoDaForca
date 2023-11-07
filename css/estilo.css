@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #666666;
+}
+
+/*fontes*/
+h1{
+    color: #a1a1a1;
+    font-size: 50px;
+    text-align: center;
+}
+
+.palavra p{
+    color: #ff0000;
+    font-size: 50px;
+
+}
+
+/*Separa o jogo em duas colunas*/
+#jogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide a área em duas colunas iguais */
+    gap: 20px; /* Define um espaçamento entre as colunas */
+    align-items: center; /* Centraliza verticalmente o conteúdo das colunas */
+}
+
+/*Area Direita*/
+.area{
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    margin: 5px;
+    height: 50px;
+    width: 3rem;
+    border-radius: 10px;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+    border: none;
+    font-size: 16px;
+    color: #a1a1a1;
+    transition: 500ms;
+  }
+  
+  button:hover {
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+    color: #d6d6d6;
+    transition: 500ms;
+  }
+
+
+/*Area Esquera*/
