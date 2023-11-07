@@ -40,47 +40,87 @@ function desenharForca(erros) {
     if (erros >= 1) {
         // Desenhar a cabeça
         ctx.beginPath();
-        ctx.arc(270, 300, 25, 0, Math.PI * 2);
+        ctx.arc(270, 130, 25, 0, Math.PI * 2);
         ctx.stroke();
     }
 
     if (erros >= 2) {
         // Desenhar o corpo
         ctx.beginPath();
-        ctx.moveTo(60, 100);
-        ctx.lineTo(60, 250);
+        ctx.moveTo(270, 155);
+        ctx.lineTo(270, 280);
         ctx.stroke();
     }
 
     if (erros >= 3) {
         // Desenhar o braço esquerdo
         ctx.beginPath();
-        ctx.moveTo(60, 120);
-        ctx.lineTo(20, 160);
+        ctx.moveTo(270, 170);
+        ctx.lineTo(220, 230);
         ctx.stroke();
     }
 
     if (erros >= 4) {
         // Desenhar o braço direito
         ctx.beginPath();
-        ctx.moveTo(60, 120);
-        ctx.lineTo(100, 160);
+        ctx.moveTo(270, 170);
+        ctx.lineTo(320, 230);
         ctx.stroke();
     }
 
     if (erros >= 5) {
         // Desenhar a perna esquerda
         ctx.beginPath();
-        ctx.moveTo(60, 250);
-        ctx.lineTo(20, 300);
+        ctx.moveTo(270, 280);
+        ctx.lineTo(220, 340);
         ctx.stroke();
     }
 
     if (erros >= 6) {
         // Desenhar a perna direita
         ctx.beginPath();
-        ctx.moveTo(60, 250);
-        ctx.lineTo(100, 300);
+        ctx.moveTo(270, 280);
+        ctx.lineTo(320, 340);
+        ctx.stroke();
+    }
+
+    if (erros >= 7) {
+        // Desenhar os olhos 
+        ctx.fillStyle = "red";
+        ctx.beginPath();
+        ctx.moveTo(255, 120);
+        ctx.lineTo(265, 130);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(265, 120);
+        ctx.lineTo(255, 130);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(275, 120);
+        ctx.lineTo(285, 130);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(285, 120);
+        ctx.lineTo(275, 130);
+        ctx.stroke();
+
+        // Desenhar a corda
+        ctx.beginPath();
+        ctx.moveTo(266, 105);//corda esqueda
+        ctx.lineTo(266, 90);
+        ctx.lineTo(266, 105);// base
+        ctx.lineTo(273, 105);
+        ctx.lineTo(273, 105);//corda direita
+        ctx.lineTo(273, 90);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(256, 155);//corda esqueda
+        ctx.lineTo(283, 155);
+        ctx.lineTo(283, 163);//altura
+        ctx.lineTo(256, 163);
+        ctx.lineTo(256, 155);//finalizacao
         ctx.stroke();
     }
 }

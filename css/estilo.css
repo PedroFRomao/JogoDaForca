@@ -3,35 +3,50 @@
     padding: 0;
 }
 
+h1, h2, #palavra, #letras-erradas {
+    font-family: Verdana, sans-serif;
+    text-align: center;
+}
+
 body{
     background-color: #666666;
+    align-items: center; 
+    text-align: center;
 }
 
 /*fontes*/
 h1{
-    color: #a1a1a1;
+    color: #cdcdcd;
     font-size: 50px;
-    text-align: center;
 }
 
-.palavra p{
-    color: #ff0000;
-    font-size: 50px;
+h2{
+    color: #cdcdcd;
+    font-size: 40px;
+}
 
+#palavra{
+    color: #cdcdcd;
+    font-size: 40px;
+}
+
+#letras-erradas{
+    color: #b4b4b4;
+    font-size: 25px;
 }
 
 /*Separa o jogo em duas colunas*/
 #jogo {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Divide a área em duas colunas iguais */
-    gap: 20px; /* Define um espaçamento entre as colunas */
-    align-items: center; /* Centraliza verticalmente o conteúdo das colunas */
+    grid-template-columns: 1fr 1fr; 
+    justify-content: center;
+    align-items: center;
 }
 
 /*Area Direita*/
 .area{
+    justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 button {
@@ -45,15 +60,15 @@ button {
     box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
     border: none;
     font-size: 16px;
-    color: #a1a1a1;
+    color: #cdcdcd;
     transition: 500ms;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
-    color: #d6d6d6;
+    color: #4f4f4f;
     transition: 500ms;
-  }
+}
 
 
 /*Area Esquera*/
