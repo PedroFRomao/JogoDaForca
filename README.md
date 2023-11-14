@@ -47,7 +47,7 @@ A classe Jogo coordena a interação entre o jogador, a palavra e o boneco. Ela 
 `letraFoiAdivinhada(letra)`: Verifica se uma letra já foi adivinhada.<br>
 
 # Diagrama de Classes
-![282661423-98553b63-f44c-468f-b3b4-cb20dede517c](https://github.com/PedroFRomao/JogoDaForca/assets/120103357/c4895e74-c531-442b-8f18-d498b6ac2dac)
+![image](https://github.com/PedroFRomao/JogoDaForca/assets/120103357/56b8b871-eab7-47d9-9849-54b34f406aa8)
 
 
 # Diagrama de Casos de Uso
