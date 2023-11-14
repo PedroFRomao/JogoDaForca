@@ -1,7 +1,8 @@
 # JogoDaForca
 
 ## Trabalho de: Pedro e Nikcolas 2 Jogos<br> 
-![282653484-d191265a-d770-414b-9a61-19ed5e834b11](https://github.com/PedroFRomao/JogoDaForca/assets/120103357/0047f25f-df26-473d-9ca7-c6c3cc0e8af6)
+![image](https://github.com/PedroFRomao/JogoDaForca/assets/120103357/9debf9c9-4ad6-4a5e-a101-a3a3846a04fa)
+
 
 
 ## **Video do jogo**
@@ -37,7 +38,8 @@ A classe Palavra gerencia a palavra oculta a ser adivinhada. Ela possui os segui
 `mostrarPalavraOculta()`: Exibe a palavra oculta, substituindo as letras não adivinhadas por underscores.<br>
 
 ### Jogo
-![282638170-758e36e0-cb03-4858-9129-fcd44ff38275](https://github.com/PedroFRomao/JogoDaForca/assets/120103357/ffd92928-3929-4129-b3ef-235fd7bdf161)
+![image](https://github.com/PedroFRomao/JogoDaForca/assets/120103357/91364cd6-a41a-4eb6-a67e-6cfa8b3f0ccb)
+
 
 A classe Jogo coordena a interação entre o jogador, a palavra e o boneco. Ela possui os seguintes métodos:
 
