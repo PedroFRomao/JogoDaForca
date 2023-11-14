@@ -1,2 +1,64 @@
 # JogoDaForca
- 
+
+## Trabalho de: Pedro e Nikcolas 2 Jogos<br> 
+![image](https://github.com/PedroFRomao/JogoDaForca/assets/120103357/758e36e0-cb03-4858-9129-fcd44ff38275)
+
+## **Video do jogo**
+
+
+
+## Estrutura do Projeto
+
+`index.html`: Página principal do jogo.<br>
+`style.css`: Estilos para a apresentação visual do jogo.<br>
+`script.js`: Lógica principal do jogo implementada em JavaScript.<br>
+`README.md`: Este arquivo, fornecendo informações sobre o projeto.<br>
+
+## Classes e Funcionalidades
+
+### Boneco
+![image](https://github.com/PedroFRomao/JogoDaForca/assets/120103357/1459384c-38a7-44ff-bdee-60aff5b614b4)
+
+A classe Boneco é responsável por desenhar a forca e o enforcado à medida que o jogador comete erros. Ela possui os seguintes métodos:
+
+`constructor(ctx)`: Inicializa a instância do Boneco e conta os erros cometidos.<br>
+`desenharForca()`: Desenha a forca e o boneco com base no número de erros cometidos.<br>
+
+### Palavra
+![image](https://github.com/PedroFRomao/JogoDaForca/assets/120103357/5379167c-b496-4ca7-8ec1-c5763ed5cca7)
+
+A classe Palavra gerencia a palavra oculta a ser adivinhada. Ela possui os seguintes métodos:
+
+`constructor(palavras)`: Inicializa a instância da Palavra com uma lista de palavras possíveis e escolhe aleatoriamente uma palavra.<br>
+`obterPalavraAleatoria()`: Escolhe aleatoriamente uma palavra da lista.<br>
+`mostrarPalavraOculta()`: Exibe a palavra oculta, substituindo as letras não adivinhadas por underscores.<br>
+
+### Jogo
+![image](https://github.com/PedroFRomao/JogoDaForca/assets/120103357/d191265a-d770-414b-9a61-19ed5e834b11)
+
+A classe Jogo coordena a interação entre o jogador, a palavra e o boneco. Ela possui os seguintes métodos:
+
+`constructor(canvas, boneco, palavra)`: Inicializa a instância do Jogo com o canvas.<br>
+`inicializar()`: Inicializa o jogo, exibindo a palavra oculta e desenhando a forca.<br>
+`processarPalpite(letra)`: Processa o palpite do jogador, atualizando a palavra e o boneco.<br>
+`letraFoiAdivinhada(letra)`: Verifica se uma letra já foi adivinhada.<br>
+
+# Diagrama de Classes
+![image](https://github.com/PedroFRomao/JogoDaForca/assets/120103357/98553b63-f44c-468f-b3b4-cb20dede517c)
+
+# Diagrama de Casos de Uso
+![image](https://github.com/PedroFRomao/JogoDaForca/assets/120103357/17b73230-e6a4-457b-8c64-49a77211be86)
+
+## Documentação Casos de Uso
+**Nome do caso de uso:** Jogo da Forca<br>
+**Caso de uso geral:** Jogar e Adivinhar Palavras<br>
+**Ator principal:** Jogador<br>
+**Resumo:** O jogador tenta adivinhar uma palavra oculta, palpitar letras e descobrir a palavra para evitar que um boneco seja enforcado.<br>
+**Pré-condições:** O jogo precisa ser iniciado<br>
+**Pós condições:** Mostra mensagem de vitória ou derrota e a palavra oculta<br>
+
+## Ações do jogo
+![image](https://github.com/PedroFRomao/JogoDaForca/assets/120103357/d83418f3-bf9a-4bd5-9d39-468d7429d605)
+
+# Diagrama de Atividades
+![image](https://github.com/PedroFRomao/JogoDaForca/assets/120103357/7965fa89-b7b4-4cc2-af7f-a9ef31700f38)
